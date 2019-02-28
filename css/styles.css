@@ -6,20 +6,6 @@ body {
 
 }
 
-@media(min-width:401px) {
-  .desktop-background {
-    background-image: url(../images/bg-desktop.svg);
-    background-repeat: no-repeat;
-  }
-}
-
-@media(max-width:400px) {
-  .mobile-background {
-    background-image: url(../images/bg-mobile.svg);
-    background-repeat: no-repeat;
-  }
-}
-
 .logo-container {
   display: flex;
 }
@@ -28,78 +14,167 @@ body {
   padding: 2rem;
 }
 
-.main-container {
-  display: flex;
-  justify-content: space-between
+@media(min-width:401px) {
+  .desktop-background {
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: space-between
+  }
+
+  .main-img-box {
+    padding: 2rem;
+    flex-basis: 50%
+  }
+
+  .main-content-box {
+    padding: 2rem;
+    flex-basis: 40%
+  }
+
+  .main-container img {
+    max-width: 90%;
+  }
+
+  .main-cnt-box-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Poppins',
+      sans-serif;
+    font-weight: 400;
+  }
+
+  .main-cnt-box-container h1 {
+    margin: 0;
+    font-family: 'Poppins',
+      sans-serif;
+    font-weight: 700;
+  }
+
+  .main-cnt-box1 {
+    padding: 2rem 0 0 0;
+  }
+
+  .main-cnt-box3 {
+    padding: 2rem 0 0 0;
+  }
+
+  .butn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 1.8rem;
+    color: hsl(257, 40%, 49%);
+    font-size: 1.25rem;
+    background: #ffffff;
+    padding: 0.7rem 4rem;
+    text-decoration: none;
+  }
+
+  .butn:hover {
+    background: #bfbfbf;
+    text-decoration: none;
+  }
+
+  .social-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .social-box {
+    padding: 1rem 2rem;
+  }
+
+  .social-box a {
+    text-decoration: none;
+  }
+
+  .social-icon {
+    margin-right: 0.7rem;
+  }
 }
 
-.main-img-box {
-  padding: 2rem;
-  flex-basis: 50%
-}
+@media(max-width:400px) {
+  .mobile-background {
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+  }
 
-.main-content-box {
-  padding: 2rem;
-  flex-basis: 40%
-}
+  .logo-box img {
+    max-width: 60%;
+  }
 
-.main-container img {
-  max-width: 90%;
-}
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
 
-.main-cnt-box-container {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  font-family: 'Poppins',
-    sans-serif;
-  font-weight: 400;
-}
+  .main-img-box {
+    padding: 2rem;
+  }
 
-.main-cnt-box-container h1 {
-  margin: 0;
-  font-family: 'Poppins',
-    sans-serif;
-  font-weight: 700;
-}
+  .main-content-box {
+    padding: 1rem 2rem;
+    color: #ffffff;
+    text-align: center;
+  }
 
-.main-cnt-box1 {
-  padding: 2rem 0 0 0;
-}
+  .main-container img {
+    max-width: 100%;
+  }
 
-.main-cnt-box3 {
-  padding: 2rem 0 0 0;
-}
+  .main-cnt-box-container h1 {
+    margin: 0;
+    font-family: 'Poppins',
+      sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
 
-.butn {
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  color: hsl(257, 40%, 49%);
-  font-size: 20px;
-  background: #ffffff;
-  padding: 0.7rem 4rem;
-  text-decoration: none;
-}
+  .main-cnt-box-container p {
+    font-size: 1.22rem;
+    line-height: 1.25;
+  }
 
-.butn:hover {
-  background: #bfbfbf;
-  text-decoration: none;
-}
+  .main-cnt-box3 a {
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
 
-.social-container {
-  display: flex;
-  justify-content: flex-end;
-}
+  .butn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 1.8rem;
+    color: hsl(257, 40%, 49%);
+    font-size: 1rem;
+    background: #ffffff;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+  }
 
-.social-box {
-  padding: 1rem 2rem;
-}
+  .butn:hover {
+    background: #bfbfbf;
+    text-decoration: none;
+  }
 
-.social-box a {
-  text-decoration: none;
-}
+  .social-container {
+    display: flex;
+    justify-content: center;
+  }
 
-.social-icon {
-  margin-right: 0.7rem;
+  .social-box {
+    margin-bottom: 2rem;
+  }
+
+  .social-box a {
+    text-decoration: none;
+  }
+
+  .social-icon {
+    margin-right: 0.7rem;
+  }
 }
